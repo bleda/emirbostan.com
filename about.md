@@ -7,7 +7,7 @@ tags: about
 
 ![emir](/images/me.jpg)
 
-Salut, I'm co-founder and CTO of [pisano](https://pisano.co).
+Salut, I'm co-founder and CTO of [Pisano](https://pisano.co).
 
 You can reach me via
 
