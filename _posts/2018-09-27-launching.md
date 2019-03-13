@@ -6,8 +6,11 @@ summary:    Yet another personal site of an ordinary guy
 categories: personal
 ---
 
-Salut.
+Salut all.
 
-____
+Finally I've managed to configure and deploy my blog.
 
-asdasd
+I've tried blogging a lot, I hope I won't fail again.
+
+Au revoir!
+Emir

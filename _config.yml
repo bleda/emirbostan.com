@@ -1,6 +1,5 @@
 # Site settings
 title:       emir bostan
-email:       emirbostan@gmail.com
 author:      emir bostan
 description: "the best javelin thrower ever."
 baseurl:     ""
@@ -23,13 +22,13 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
-enable_anchorjs: false
+enable_anchorjs: true
 # Preview image for social media aka og:image and twitter:image
-post_preview_image: false
+post_preview_image: true
 
 # Facebook Page integration
 # (for instant articles and other stuff)
@@ -51,11 +50,11 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: bleda
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: bostanemir
 skype_username:
 steam_nickname:
 google_plus_id:
@@ -69,24 +68,24 @@ telegram_username:
 vk_id:
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
+share_twitter: true
 share_googleplus: false
-share_linkedin: false
+share_linkedin: true
 share_digg: false
 share_tumblr: false
-share_reddit: false
+share_reddit: true
 share_stumbleupon: false
-share_hackernews: false
+share_hackernews: true
 
 text:
   pagination:
     newer: 'Newer'
     older: 'Older'
   share_buttons:
-    text:         'Share this post!'
+    text:         'Like what you read? Please share this post!'
     facebook:     'Share on Facebook'
     twitter:      'Share on Twitter'
     googleplus:   'Share on Google+'
