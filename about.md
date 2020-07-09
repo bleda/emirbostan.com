@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-![emir](/images/me.jpg)
+![emir](/images/me.png)
 
 Salut, I'm co-founder and CTO of [Pisano](https://pisano.co).
 
