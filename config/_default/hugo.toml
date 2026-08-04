@@ -1,0 +1,71 @@
+theme = "PaperMod"
+
+title = "Emir Bostan"
+copyright = "Copyright © 2026, Emir Bostan."
+locale = "en-US"
+
+enableRobotsTXT = true
+enableEmoji = true
+mainSections = ["blog"]
+
+[permalinks]
+  blog = "/:slug/"
+
+[params]
+  env = "production"
+  description = "Maker of things with prompts, code, and music."
+  author = "Emir Bostan"
+  images = ["images/meta.jpg"]
+  defaultTheme = "auto"
+  ShowReadingTime = false
+  hideAuthor = true
+  ShowShareButtons = true
+  ShareButtons = ["x", "linkedin"]
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "Emir Bostan"
+    Content = "Maker of things with prompts, code, and music."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:emirbostan@gmail.com"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/bleda"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/emirbostan"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/bostanemir"
+
+  [params.assets]
+    favicon = "favicon.ico"
+    favicon16x16 = "favicon-16x16.png"
+    favicon32x32 = "favicon-32x32.png"
+    apple_touch_icon = "apple-touch-icon.png"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"

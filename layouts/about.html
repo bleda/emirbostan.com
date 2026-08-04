@@ -1,0 +1,81 @@
+{{- define "main" }}
+<article class="about-page">
+  <header class="about-profile">
+    <img
+      class="about-avatar"
+      src="{{ .Params.profileImage | relURL }}"
+      alt="{{ .Params.profileImageAlt }}"
+      width="72"
+      height="72"
+    >
+    <div class="about-profile-copy">
+      <h1>{{ site.Title }}</h1>
+      <p>{{ site.Params.description }}</p>
+    </div>
+  </header>
+
+  <div class="about-overview">
+    <p>{{ .Params.intro }}</p>
+    <p class="about-skills">{{ .Params.skills }}</p>
+  </div>
+
+  <section class="about-section" aria-labelledby="work-experience">
+    <h2 id="work-experience">Work Experience</h2>
+    <div class="about-entries">
+      {{- range .Params.experience }}
+      <article class="about-entry">
+        <div class="about-period">{{ .period }}</div>
+        <div class="about-entry-details">
+          <h3>
+            {{- if .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              {{ .role }} at {{ .company }}<span class="about-external" aria-hidden="true">↗</span>
+            </a>
+            {{- else }}
+            {{ .role }} at {{ .company }}
+            {{- end }}
+          </h3>
+          {{- with .location }}<p class="about-location">{{ . }}</p>{{ end }}
+          <p>{{ .description }}</p>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="about-section" aria-labelledby="education">
+    <h2 id="education">Education</h2>
+    <div class="about-entries">
+      {{- range .Params.education }}
+      <article class="about-entry">
+        <div class="about-period">{{ .period }}</div>
+        <div class="about-entry-details">
+          <h3>
+            {{- if .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              {{ .degree }} at {{ .school }}<span class="about-external" aria-hidden="true">↗</span>
+            </a>
+            {{- else }}
+            {{ .degree }} at {{ .school }}
+            {{- end }}
+          </h3>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="about-section about-contact" aria-labelledby="say-hi">
+    <h2 id="say-hi">Say hi</h2>
+    <div class="about-contact-links">
+      {{- range .Params.contacts }}
+      <a href="{{ .url }}"{{ if not (hasPrefix .url "mailto:") }} target="_blank" rel="noopener noreferrer"{{ end }}>
+        <span>{{ .label }}</span>
+        <span class="about-contact-value">{{ .value }}</span>
+        {{- if not (hasPrefix .url "mailto:") }}<span class="about-external" aria-hidden="true">↗</span>{{ end }}
+      </a>
+      {{- end }}
+    </div>
+  </section>
+</article>
+{{- end }}

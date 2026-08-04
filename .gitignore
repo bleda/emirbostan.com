@@ -1,9 +1,5 @@
-_site
-.sass-cache
+/public/
+/resources/_gen/
+/hugo_stats.json
+.hugo_build.lock
 .DS_Store
-.jekyll-metadata
-
-# Ignore the config file that's used for gh-pages.
-_config.gh-pages.yml
-
-Gemfile.lock
