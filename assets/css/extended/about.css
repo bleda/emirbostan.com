@@ -105,8 +105,8 @@ pre {
 
 .about-entry {
     display: grid;
-    grid-template-columns: 96px minmax(0, 1fr);
-    gap: 16px;
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 24px;
 }
 
 .about-period {
@@ -162,7 +162,7 @@ pre {
 
 .about-contact-links a {
     display: grid;
-    grid-template-columns: 72px minmax(0, auto) 1fr;
+    grid-template-columns: 88px minmax(0, auto) 1fr;
     align-items: baseline;
     gap: 8px;
     max-width: 100%;
@@ -189,7 +189,7 @@ pre {
     }
 
     .about-contact-links a {
-        grid-template-columns: 64px minmax(0, 1fr) auto;
+        grid-template-columns: 88px minmax(0, 1fr) auto;
     }
 
     .about-contact-value {
