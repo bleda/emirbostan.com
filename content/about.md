@@ -31,7 +31,7 @@ description = "Payments automation infrastructure for merchants."
 
 [[experience]]
 period = "2014 to 2021"
-role = "Cofounder & Chief Customer & Technology Officer"
+role = "Cofounder, Chief Customer & Technology Officer"
 company = "Pisano"
 url = "https://pisano.com"
 description = "An experience management platform used by more than 100 enterprises across 40 countries."
